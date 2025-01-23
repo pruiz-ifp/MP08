@@ -1,0 +1,85 @@
+:root{
+    --color0: #E63946;
+    --color1: #A8DADC;
+    --color2: #457B9D;
+    --color3: #1D3557;
+    --color4: #F1FAEE;
+    --colorB: limegreen;
+}
+@font-face {
+    font-family: 'Trevino';
+    src: url('../fonts/Trevino.eot');
+    src: url('../fonts/Trevino.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Trevino.woff2') format('woff2'),
+        url('../fonts/Trevino.woff') format('woff'),
+        url('../fonts/Trevino.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Trevino';
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color0);
+}
+p{
+    padding: 1rem;
+    cursor: zoom-in;
+    background: var(--color4);
+    width: 50vw;
+    height: 50vw;
+}
+.progres{
+    height: 10px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--colorB);
+    scale: 0 1;
+    animation: analitzador linear;
+          -o-animation-timing: scroll();
+        -moz-animation-timing: scroll();
+     -webkit-animation-timing: scroll();
+             animation-timeline: scroll();
+    transform-origin: left;
+}
+@keyframes analitzador{
+    to{
+        scale: 1 1;
+    }
+}
+/*-----SMARTPHONE---- */
+@media screen and (max-width: 480px){
+    body{
+        background: var(--color1);
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
+/*-----TABLET---- */
+@media screen and (min-width: 481px) and (max-width: 1279px){
+    body{
+        background: var(--color2);
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+/*-----ORDINADOR---- */
+@media screen and (min-width: 1280px){
+    body{
+        background: var(--color3);
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        columns: 2;
+    }
+}

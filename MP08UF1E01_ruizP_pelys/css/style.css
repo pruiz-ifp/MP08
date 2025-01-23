@@ -1,0 +1,89 @@
+/*------BARRA NAVEGACIÓ----*/
+header{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background: black ;
+    opacity: 50%;
+    font-family: Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+li{
+    display: inline;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+a:hover{
+    color: #fff;
+}
+img{
+    height: 40px;
+    width: 50px;
+    margin: 5px 20px;
+    float: left;
+}
+.nav{
+    float: left;
+}
+.xarxes{
+    float: right;
+}
+
+/*------DOCUMENTALS----*/
+body{
+    font-family: Helvetica, sans-serif;
+    background: #222;
+}
+h1{
+    color: #ccc;
+    font-size: 22px;
+}
+.peli{
+    width: 175px;
+    margin: 20px;
+    float: left;
+}
+.portada{
+    height: 260px;
+    width: 175px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-image: url(.../img/koba);
+}
+.titol{
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 700;
+}
+.documental{
+    float: right;
+}
+.any{
+    color: #ccc;
+    font-size: 11px;
+    float: left;
+    margin: 20px 0;
+}
+.tipus{
+    color: #ccc;
+    font-size: 11px;
+    float: right;
+    margin: 20px 0;
+}
+.di{
+    margin-top: 70px;
+}
+.dv , .pp, .pv, .ss, .sv{
+    clear: both;
+}
+.dv, .pv, .sv{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%); 
+    filter: grayscale(100%);    
+}
+
