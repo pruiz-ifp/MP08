@@ -63,7 +63,55 @@ nav li{
 nav li:hover{
     color: var(--color2);
 }
-/**/
+/*----HTML---*/
+.cont{
+    width: 400px;
+    height: 440px;
+    background: var(--color2);
+    border-radius: 15px;
+    margin: 15px;
+    float: left;
+}
+.cont li{
+    font-size: 30pt;
+    margin: 0 20px;
+    color: var(--color1);
+    text-decoration: none;
+    display: block;
+}
+.cont img{
+    width: 90%;
+    margin: 15px 20px 0 20px;
+    border-radius: 15px;
+}
+button {
+    background-color: var(--color2);
+    color: var(--color0);
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px 35%;
+    padding: 0.5em 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    background: var(--color1)
+  }
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+a{
+    text-decoration: none;
+    color: #161515;
+}
 
 /*-------TREBALLS--------*/
 .p2 li{
@@ -212,6 +260,8 @@ li{
     text-decoration: none;
     list-style: none;
     display: inline-block;
+    margin: 0 50%;
+    text-align: center;
 }
 /*----XARXES----*/
 svg{
