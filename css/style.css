@@ -29,7 +29,7 @@ nav{
     right: 0;
     font-weight: 400;
     font-stretch: expanded;
-    background: linear-gradient(0deg, rgba(22,21,21,0) 0%, rgba(22,21,21,0.5844931722689075) 35%, rgba(22,21,21,1) 100%);
+    background: var(--color0);
     padding-top: 1.875rem;
     z-index: 200;
     letter-spacing: 0.25rem;
@@ -41,24 +41,17 @@ nav{
 	animation: gradient 15s ease infinite;
 }
 .p2{
-    background: gainsboro;
-    height: 100%;
+    background: rgb(37, 37, 37);
+    height: fit-content;
+    margin: 3rem 0;
 }
-.p3{
-    top: 3.75rem;
-    padding: 1.25rem;
-}
-.p4{
-    width: 100%;
-    height: 100%;
-}
+
 /*-------NAV--------*/
 nav li{
     display: inline-block;
     margin: 0 1.25rem;
     color: var(--color1);
     font-weight: 700;
-
 }
 nav li:hover{
     color: var(--color2);
@@ -68,11 +61,12 @@ nav li:hover{
     width: 18.75rem;
     height: 18.75rem;
     background: var(--color2);
-    border-radius: 0.938rem;
-    margin: 0.938rem;
+    border-radius: 0.9rem;
+    margin: 0.9rem;
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
     float: left;
-    
+    position: relative;
+    text-align: center;
 }
 .cont li{
     font-size: 30pt;
@@ -84,7 +78,7 @@ nav li:hover{
 .cont svg{
     width: 8rem;
     height: 8rem;
-    margin: 0.2rem 302rem 0 4.4rem;
+    align-items: center;
     border-radius: 0.9rem;
     fill: #7e50f2;
 }
@@ -116,79 +110,6 @@ a{
     text-decoration: none;
     color: #161515;
 }
-
-/*-------TREBALLS--------*/
-.p2 li{
-    height: 100%;
-    width: 33.33%;
-    background: rgb(55, 55, 56);
-    color: rgb(49, 49, 49);
-    margin: auto;
-    float: left;
-    font-size: 22pt;
-    font-weight: 700;
-    list-style: none;
-    text-align: center;
-    line-height: 20rem;
-    opacity: 0.5;
-}
-.p2 li:hover{
-    box-shadow: 2px 2px 8px rgb(82, 80, 80, 5);
-    color: aliceblue;
-    opacity: 1;
-}
-
-.p2 :first-child{
-    background-image: url(../img/dg01.png);
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-.cont{
-    margin: 20px;
-}
-.targ{
-    width: 270px;
-    height: 400px;
-    margin: 0.625rem;
-    display: inline-block;
-    background: whitesmoke;
-    border-radius: 0.625rem;
-    text-decoration: none;
-    color: #8d02ff;
-    text-align: center;
-}
-.portada{
-    height: 250px;
-    height: 320px;
-    border-radius: 0.625rem;
-    margin: 0.625rem 0.625rem 0 0.625rem;
-}
-.titol{
-    font-size: 1.875rem;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-.targ:nth-child(2n+1){
-    position: relative;
-    bottom: 20px;
-}
-.targ:nth-child(2n){
-    position: relative;
-    top: 20px;
-}
-.targ:nth-child(2n+1):hover{
-    position: relative;
-    bottom: 40px;
-    box-shadow: 2px 2px 8px rgb(82, 80, 80, 5);
-    transition: 0.3s;
-}
-.targ:nth-child(2n):hover{
-    position: relative;
-    top: 40px;
-    box-shadow: 2px 2px 8px rgb(82, 80, 80, 5);
-    transition: 0.3s;
-}
-
 /*-------PORTFOLI ANIM. LETRAS--------*/
 h2 {
     margin: 0; padding: 0;
@@ -234,15 +155,15 @@ h2 {
     transform:translateY(-50%) scaleY(1);
   }
 /*-------CONTACTE--------*/
-.contacte{
-    margin: 0 auto;
-}
+
 .c2{
     height: 50%;
     width: 70%;
+    clear: left;
     background: var(--color2);
     border-radius: 20px;
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
+    margin: 3rem 0;
 
 }
 .c1, .c2{
@@ -288,81 +209,6 @@ svg:hover{
 	100% {
 		background-position: 0% 50%;
 	}
-}
-/*-----PRUEBA-----*/
-.p4{
-    height: 200vh;
-    justify-content: center;
-    float: left;
-    
-    background: #222;
-}
-.contenidor {
-    height: 300px;
-    width: 600px;
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row;
-    
-    transition: all 200ms ease-in-out;
-}
-  
-.image-contenidor{
-    height: 300px;
-    width: 450px;
-    overflow: hidden;
-    border-radius: 5px;
-    cursor: revert;
-  
-    transition: all 200ms ease-in-out;
-}
-  
-img {
-    height: 300px;
-    width: 450px;
-       object-fit: cover;
-       object-position: top;
-
-    transition: all 200ms ease-in-out;
-}
-
-.header-contenidor {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    left: 300px;
-    transition: all 200ms ease-in-out;
-    overflow: hidden;
-}
-  
-h1 {
-    position: relative;
-    bottom: 0;
-    height: 300px;
-    color: #fff;
-    font-size: 5rem;
-    font-family: Oswald;
-    line-height: 25rem;
-    text-transform: uppercase;
-    
-    transition: all 200ms ease-in-out;
-}
-  
-.contenidor:hover img {
-    transform: scale(2);
-    filter: blur(20%);
-    -webkit-filter: grayscale(100%);
-}
-  
-.contenidor:hover h1 {
-    bottom: 300px;
-    transform: scale(.4);
-}
-  
-.contenidor:hover .image-contenidor {
-    width: 800px;
 }
 
 /*-----RESPONSIVE-----*/
