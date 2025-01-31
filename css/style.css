@@ -81,11 +81,12 @@ nav li:hover{
     text-decoration: none;
     display: block;
 }
-.cont img{
-    width: 50%;
-    height: 50%;
-    margin: 0.938rem 301.875rem 0 4.375rem;
-    border-radius: 0.938rem;
+.cont svg{
+    width: 8rem;
+    height: 8rem;
+    margin: 0.2rem 302rem 0 4.4rem;
+    border-radius: 0.9rem;
+    fill: #7e50f2;
 }
 button {
     background-color: var(--color2);
