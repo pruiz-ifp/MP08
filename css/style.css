@@ -43,7 +43,7 @@ nav{
 .p2{
     background: rgb(37, 37, 37);
     height: fit-content;
-    margin: 3rem 0;
+    margin-top: 3rem;
 }
 
 /*-------NAV--------*/
@@ -57,6 +57,10 @@ nav li:hover{
     color: var(--color2);
 }
 /*----HTML---*/
+.contenidor{
+    margin-left: 15%;
+    margin-right: 15%;
+}
 .cont{
     width: 18.75rem;
     height: 18.75rem;
@@ -65,7 +69,6 @@ nav li:hover{
     margin: 0.9rem;
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
     float: left;
-    position: relative;
     text-align: center;
 }
 .cont li{
@@ -223,7 +226,7 @@ svg:hover{
 @media screen and (max-width: 480px){
     nav{
         position: fixed; 
-        height: 2.2rem;
+        height: 2.1rem;
         text-align: center;
         font-size: 0.85rem;
         font-weight: 400;
@@ -238,8 +241,16 @@ svg:hover{
         font-size: 1.25rem;
     }
     .contenidor{
-        bottom: 300px;
-        transform: scale(.5);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .cont{
+        width: 18.75rem;
+        height: 18.75rem;
+        border-radius: 0.9rem;
+        margin: 0.9rem;
+        display: block;
+        text-align: center;
     }
     /*--FOOTER--*/
     .c2{

@@ -487,3 +487,21 @@ body{
 		background-position: 0% 50%;
 	}
 }
+@media screen and (max-width: 480px){
+    .serrell{
+        right: 140px;
+    }
+    .s2{
+        right: 220px;
+    }
+    .coll{
+        left: 25px;
+    }
+    .pelos{
+        left: -100px;
+    }
+    #pruiz{
+        top:-2050px;
+        transform: scale(35%);
+    }
+}
