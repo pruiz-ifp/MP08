@@ -155,16 +155,16 @@ h2 {
     transform:translateY(-50%) scaleY(1);
   }
 /*-------CONTACTE--------*/
-
 .c2{
-    height: 50%;
+    height: 70%;
     width: 70%;
     clear: left;
-    background: var(--color2);
+    background: var(--color1);
     border-radius: 20px;
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
+    position: relative;
+    left: 10%;
     margin: 3rem 0;
-
 }
 .c1, .c2{
     float: left;
@@ -177,9 +177,8 @@ h2 {
     float: left;
 }
 .name{
-    font-family: Arapey;
-    color: #F1FAEE;
-    font-size: 90pt;
+    color: var(--color2);
+    font-size: 7rem;
     font-weight: 300;
 }
 li{
@@ -191,7 +190,8 @@ li{
 }
 /*----XARXES----*/
 svg{
-    fill:rgb(40, 39, 39);
+    width: 4rem;
+    fill: var(--color2);
     padding: 1rem;
 }
 svg:hover{
@@ -221,6 +221,15 @@ svg:hover{
 }
 /*--SMARTPHONE-- */
 @media screen and (max-width: 480px){
+    nav{
+        position: fixed; 
+        height: 2.2rem;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 400;
+        padding-top: 1rem;
+        letter-spacing: 0.1rem;
+    }
     
     h2{
         font-size: 6rem;
@@ -231,5 +240,23 @@ svg:hover{
     .contenidor{
         bottom: 300px;
         transform: scale(.5);
+    }
+    /*--FOOTER--*/
+    .c2{
+        display: block;
+        height: 30rem;
+    }
+    .c2 img{
+        height: 15rem;
+        width: 15rem;
+        margin: 1.5rem;
+    }
+    .name{
+        font-size: 5rem;
+        margin: 0 auto;
+    }
+    svg{
+        width: 2.15rem;
+        margin: 0 0.05rem;
     }
 }
