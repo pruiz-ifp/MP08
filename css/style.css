@@ -70,6 +70,7 @@ nav li:hover{
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
     float: left;
     text-align: center;
+    transition: 0.2s;
 }
 .cont li{
     font-size: 30pt;
@@ -84,6 +85,9 @@ nav li:hover{
     align-items: center;
     border-radius: 0.9rem;
     fill: #7e50f2;
+}
+.cont:hover{
+    transform: translateY(-0.75rem) translateX(-0.25rem);
 }
 button {
     background-color: var(--color2);
@@ -233,7 +237,6 @@ svg:hover{
         padding-top: 1rem;
         letter-spacing: 0.1rem;
     }
-    
     h2{
         font-size: 6rem;
     }
@@ -241,8 +244,8 @@ svg:hover{
         font-size: 1.25rem;
     }
     .contenidor{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .cont{
         width: 18.75rem;
