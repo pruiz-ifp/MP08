@@ -21,19 +21,6 @@ html, body{
     position: relative;
     height: 100%;
 }
-nav{
-    position: fixed; 
-    height: 3.75rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-weight: 400;
-    font-stretch: expanded;
-    background: var(--color0);
-    padding-top: 1.875rem;
-    z-index: 200;
-    letter-spacing: 0.25rem;
-}
 
 .p1{
     background: linear-gradient(-45deg, #4e2795, #a53ce7, #23a6d5, #d78b5c);
@@ -47,6 +34,19 @@ nav{
 }
 
 /*-------NAV--------*/
+nav{
+    position: fixed; 
+    height: 3.75rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: 400;
+    font-stretch: expanded;
+    background: var(--color0);
+    padding-top: 1.875rem;
+    z-index: 200;
+    letter-spacing: 0.25rem;
+}
 nav li{
     display: inline-block;
     margin: 0 1.25rem;
@@ -58,15 +58,15 @@ nav li:hover{
 }
 /*----HTML---*/
 .contenidor{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .cont{
     width: 18.75rem;
     height: 18.75rem;
     background: var(--color2);
     border-radius: 0.9rem;
-    margin: 0.9rem;
+    margin: 1rem;
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
     float: left;
     text-align: center;
@@ -165,13 +165,14 @@ h2 {
 .c2{
     height: 70%;
     width: 70%;
-    clear: left;
     background: var(--color1);
     border-radius: 20px;
     box-shadow: 0.625rem 0.625rem 0 0 rgb(0, 0, 0);
+    clear: left;
     position: relative;
     left: 10%;
     margin: 3rem 0;
+    
 }
 .c1, .c2{
     float: left;
@@ -264,13 +265,15 @@ svg:hover{
         height: 15rem;
         width: 15rem;
         margin: 1.5rem;
+
     }
     .name{
-        font-size: 5rem;
+        font-size: 4rem;
         margin: 0 auto;
+        text-align: center;
     }
     svg{
-        width: 2.15rem;
-        margin: 0 0.05rem;
+        width: 2rem;
+        margin: 0 0rem;
     }
 }
