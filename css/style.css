@@ -52,6 +52,7 @@ nav li{
     margin: 0 1.25rem;
     color: var(--color1);
     font-weight: 700;
+    font-size: 1.2rem;
 }
 nav li:hover{
     color: var(--color2);
@@ -193,6 +194,11 @@ h2 {
   h2:hover span:nth-child(3){
     transform:translateY(-50%) scaleY(1);
   }
+
+  h1{
+    color: #161515;
+    text-align: center;
+  }
 /*-------CONTACTE--------*/
 .c2{
     height: 70%;
@@ -268,6 +274,9 @@ svg:hover{
         font-weight: 400;
         padding-top: 1rem;
         letter-spacing: 0.1rem;
+    }
+    nav li{
+        font-size: 1rem;
     }
     h2{
         font-size: 4rem;
