@@ -152,14 +152,14 @@ a{
     fill: #9571f1;
 }
 .f3{
-    width: 40rem;
+    width: 90%;
     height: 4rem;
     border-radius: 3rem 3rem 3rem 3rem;
     background: #f6f3f3;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     position: relative;
     top: 16.25rem;
-    left: 4rem;
+    left: 5%;
 }
 /*--TYPERWRITTER--*/
 h1 {
@@ -172,7 +172,7 @@ h1 {
     z-index: 2000;
     position: relative;
     top: 40rem;
-    left: 13.5rem;
+    left: 20%;
 }
 @keyframes typing {
     0%, 27% { content: ""; }
@@ -289,9 +289,7 @@ svg:hover{
 
 /*--ORDINADOR-- */
 @media screen and (min-width: 1280px){
-    h1{
-        font-size: 1rem;
-    }
+
 }
 /*--SMARTPHONE-- */
 @media screen and (max-width: 480px){
@@ -321,7 +319,7 @@ svg:hover{
     }
     .f2{
         z-index: 300;
-        top: -5rem;
+        top: -5;
         float: right;
     }
     .f2 svg{
@@ -338,8 +336,6 @@ svg:hover{
     h1 {
         font-size: 1.25rem;
         color: var(--color1);
-        text-align: left;
-        font-family: Poppins;
         font-weight: 700;
         top: 30rem;
         left: 4rem;
