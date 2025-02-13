@@ -44,7 +44,7 @@ nav{
     font-stretch: expanded;
     background: var(--color0);
     padding-top: 1.875rem;
-    z-index: 1000;
+    z-index: 5000;
     letter-spacing: 0.25rem;
 }
 nav li{
@@ -118,7 +118,7 @@ a{
     text-decoration: none;
     color: #161515;
 }
-/*-------PORTFOLI ANIM. LETRAS--------*/
+/*-------FINESTRA--------*/
 
 .finestra{
     height: 60%;
@@ -142,7 +142,7 @@ a{
 .f2{
     z-index: 300;
     position: relative;
-    top: -3.75rem;
+    top: -7.75rem;
     float: right;
 }
 .f2 svg{
@@ -151,53 +151,82 @@ a{
     margin: 0 -0.5rem;
     fill: #9571f1;
 }
-h2 {
-    margin: 0; padding: 0;
-    position:absolute;
-    top: 50%; left: 50%;
-    transform:translate(-50%,-50%);
-    font-size: 10rem; color:transparent;
-    text-transform:uppercase;
+.f3{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    background: #f6f3f3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    position: relative;
+    top: 16.25rem;
+    left: 4rem;
+}
+/*--TYPERWRITTER--*/
+h1 {
+    font-size: 2.75rem;
+    color: var(--color1);
+    text-align: left;
+    font-family: Poppins;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+    z-index: 2000;
+    position: relative;
+    top: 40rem;
+    left: 13.5rem;
+}
+@keyframes typing {
+    0%, 27% { content: ""; }
+    1%, 26% { content: "b"; }
+    2%, 25% { content: "be"; }
+    3%, 23% { content: "ben"; }
+    4%, 22% { content: "benv"; }
+    5%, 21% { content: "benvi"; }
+    6%, 20% { content: "benvin"; }
+    7%, 19% { content: "benving"; }
+    9%, 18% { content: "benvingu"; }
+    10%, 17% { content: "benvingut";}
+    11%, 16%{ content: "benvinguts"}
+    12%, 15%{ content: "benvinguts!"}
+  
+    30%, 51% { content: ""; }
+    31%, 50% { content: "2"; }
+    33%, 49% { content: "20"; }
+    34%, 47% { content: "202"; }
+    35%, 46% { content: "2024"; }
+  
+    54%, 75% { content: ""; }
+    55%, 74% { content: "2"; }
+    56%, 72% { content: "20"; }
+    58%, 71% { content: "202"; }
+    59%, 70% { content: "2025"; }
   }
-  h2 span:nth-child(1){
-    position:absolute;
-    top:0; left:0; color: #2f2e2e;
-    transition:0.5s;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-    overflow:hidden;
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
-  h2:hover span:nth-child(1){
-    transform:translateY(-20px); 
+  
+  .typewriter {
+    --caret: currentcolor;
   }
-  h2 span:nth-child(2){
-    position:absolute;
-    top:0; left:0; color: #2f2e2e;
-    transition:0.5s;
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-    overflow:hidden;
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
   }
-  h2:hover span:nth-child(2){
-    transform:translateY(18px); 
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
   }
-  h2 span:nth-child(3){
-    position:absolute;
-    top:50%; left: -3%;
-    transform:translateY(-50%) scaleY(0);
-    width: 102%; color: #2f2e2e;
-    background:var(--color2);
-    font-size: 0.25em; font-weight: 500;
-    letter-spacing:0.7em;
-    text-align:center;
-    padding-left: 20px; margin-left: 5px;
-    transition:0.5s;
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
   }
-  h2:hover span:nth-child(3){
-    transform:translateY(-50%) scaleY(1);
-  }
-
-  h1{
-    color: #161515;
-    text-align: center;
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
   }
 /*-------CONTACTE--------*/
 .c2{
@@ -278,12 +307,6 @@ svg:hover{
     nav li{
         font-size: 1rem;
     }
-    h2{
-        font-size: 4rem;
-    }
-    h1{
-        font-size: 1.25rem;
-    }
     .finestra{
         height: 50%;
         width: 75%;
@@ -298,7 +321,7 @@ svg:hover{
     }
     .f2{
         z-index: 300;
-        top: -3rem;
+        top: -5rem;
         float: right;
     }
     .f2 svg{
@@ -306,6 +329,21 @@ svg:hover{
         height: 1.5rem;
         margin: 0 -0.5rem;
     }
+    .f3{
+        width: 16rem;
+        height: 2rem;
+        top: 9.6rem;
+        left: 1rem;
+    }
+    h1 {
+        font-size: 1.25rem;
+        color: var(--color1);
+        text-align: left;
+        font-family: Poppins;
+        font-weight: 700;
+        top: 30rem;
+        left: 4rem;
+      }
     .contenidor{
         margin-left: 5%;
         margin-right: 5%;
@@ -338,3 +376,5 @@ svg:hover{
         margin: 0 0rem;
     }
 }
+  
+
